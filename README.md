@@ -5,6 +5,7 @@ Useful for CI Rails-applications.
 Docker recipe containing Ruby, phantomjs on Centos, it includes even some other common libraries, like:
 
 - libraries useful for compile common gems
+- libraries useful for tests webapps (like qtwebkit)
 - nodejs package manager
 - tar, git,...
 - epel releases

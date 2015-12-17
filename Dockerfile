@@ -11,6 +11,10 @@ ENV PHANTOMJS_DOWNLOAD_SHA256 a1d9628118e270f26c4ddd1d7f3502a93b48ede334b8585d11
 RUN yum install -y epel-release
 RUN yum install -y tar bzip2 git sqlite make gcc gcc-c++ ruby-devel zlib-devel postgresql-devel cmake openssh-client libxml2-devel libxslt-devel nodejs npm
 
+# installing webkit - useful for CI webapps
+RUN yum install -y qtwebkit-devel
+RUN ln -s /usr/lib64/qt4/bin/qmake /usr/bin/qmake
+
 # INSTALL RUBY
 RUN yum install -y ruby-$RUBY_VERSION
 RUN gem install bundler
