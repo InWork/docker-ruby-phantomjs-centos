@@ -15,8 +15,8 @@ RUN yum install -y tar bzip2 git sqlite make gcc gcc-c++ ruby-devel zlib-devel p
 RUN yum install -y qtwebkit-devel
 RUN ln -s /usr/lib64/qt4/bin/qmake /usr/bin/qmake
 
-# INSTALL RUBY
-RUN yum install -y ruby-$RUBY_VERSION
+# INSTALL RUBY & rubygems
+RUN yum install -y ruby-$RUBY_VERSION rubygems
 RUN gem install bundler
 
 # INSTALL PHANTOMJS
