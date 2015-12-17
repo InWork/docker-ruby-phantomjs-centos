@@ -11,4 +11,4 @@ Docker recipe containing Ruby, phantomjs on Centos, it includes even some other 
 - ...
 
 
-See our [Docker Hub repo](https://hub.docker.com/r/inwork/docker-ruby-golang-centos/)
+See our [Docker Hub repo](https://hub.docker.com/r/inwork/docker-ruby-phantomjs-centos/)
