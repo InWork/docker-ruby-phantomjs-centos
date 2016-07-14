@@ -1,7 +1,7 @@
 FROM centos:7
 
 ENV RUBY_VERSION 2.3.1
-ENV PHANTOMJS_VERSION 1.9.8
+ENV PHANTOMJS_VERSION 2.1.1
 
 # URL and SHA256 for ruby
 ENV RUBY_DOWNLOAD_URL http://cache.ruby-lang.org/pub/ruby/ruby-$RUBY_VERSION.tar.gz
@@ -9,7 +9,7 @@ ENV RUBY_DOWNLOAD_SHA256 b87c738cb2032bf4920fef8e3864dc5cf8eae9d89d8d523ce023694
 
 # find URL and SHA256 on http://phantomjs.org/download.html
 ENV PHANTOMJS_DOWNLOAD_URL https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2
-ENV PHANTOMJS_DOWNLOAD_SHA256 a1d9628118e270f26c4ddd1d7f3502a93b48ede334b8585d11c1c3ae7bc7163a
+ENV PHANTOMJS_DOWNLOAD_SHA256 86dd9a4bf4aee45f1a84c9f61cf1947c1d6dce9b9e8d2a907105da7852460d2f
 
  # install general pre-requisites
 RUN yum install -y epel-release
