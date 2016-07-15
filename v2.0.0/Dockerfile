@@ -17,7 +17,7 @@ RUN ln -s /usr/lib64/qt4/bin/qmake /usr/bin/qmake
 
 # INSTALL RUBY & rubygems
 RUN yum install -y ruby-$RUBY_VERSION rubygems
-RUN gem install bundler rspec rails
+RUN gem install bundler rspec rails:4.2.7
 
 # INSTALL PHANTOMJS
 RUN yum install -y fontconfig freetype freetype-devel fontconfig-devel libstdc++
